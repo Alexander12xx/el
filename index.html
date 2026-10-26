@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elwana Blooms is a Kenyan flower grower and export partner supplying fresh-cut roses, hypericum and seasonal flowers to international buyers.">
+    <meta name="theme-color" content="#18352a">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Elwana Blooms | Kenyan Flowers for Global Markets">
+    <meta property="og:description" content="Kenyan-grown fresh-cut roses, hypericum and seasonal flowers, carefully prepared for international buyers.">
+    <meta property="og:locale" content="en_KE">
+    <title>Elwana Blooms | Kenyan Flowers for Global Markets</title>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Elwana Blooms",
+            "legalName": "Elwana Blooms Company Limited",
+            "description": "Kenyan flower grower and export partner supplying fresh-cut roses, hypericum and seasonal flowers to international buyers.",
+            "email": "elwanablooms@gmail.com",
+            "telephone": "+254722671336",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Nairobi",
+                "addressCountry": "KE"
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script>
+        (function loadMarketMapController() {
+            var observer = new MutationObserver(function () {
+                if (!document.querySelector("[data-map-markers]")) { return; }
+                observer.disconnect();
+
+                var script = document.createElement("script");
+                script.src = "assets/js/map.js";
+                document.head.appendChild(script);
+            });
+
+            observer.observe(document.documentElement, { childList: true, subtree: true });
+        })();
+    </script>
+
+    <!-- Inline fallback + fixes -->
+    <style>
+        /* ---------- Branded homepage opening ---------- */
+        .brand-hero {
+            position: relative;
+            overflow: hidden;
+            background: #f4f1e8;
+            color: #18352a;
+            padding: clamp(54px, 8vw, 104px) 24px;
+        }
+        .brand-hero-inner {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(300px, .92fr);
+            align-items: center;
+            gap: clamp(36px, 7vw, 96px);
+        }
+        .brand-hero-copy { max-width: 600px; }
+        .brand-hero-kicker {
+            margin: 0 0 18px;
+            color: #55745c;
+            font-size: .78rem;
+            font-weight: 700;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+        }
+        .brand-hero h1 {
+            margin: 0;
+            color: #18352a;
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: clamp(4rem, 8vw, 7.2rem);
+            font-weight: 400;
+            line-height: .92;
+        }
+        .brand-hero h1 span { display: block; }
+        .brand-hero-lede {
+            max-width: 500px;
+            margin: 24px 0 0;
+            color: #43554a;
+            font-size: clamp(1rem, 1.5vw, 1.2rem);
+            line-height: 1.7;
+        }
+        .brand-hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 30px;
+        }
+        .brand-hero-actions a {
+            display: inline-flex;
+            min-height: 48px;
+            align-items: center;
+            justify-content: center;
+            padding: 0 22px;
+            border: 1px solid #18352a;
+            border-radius: 3px;
+            color: #18352a;
+            font-size: .9rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background-color .2s ease, color .2s ease;
+        }
+        .brand-hero-actions a:first-child,
+        .brand-hero-actions a:hover {
+            background: #18352a;
+            color: #fff;
+        }
+        .brand-hero-actions a:first-child:hover {
+            background: #2d5941;
+            border-color: #2d5941;
+        }
+        .brand-hero-visual { position: relative; margin: 0; }
+        .brand-hero-visual img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 1.12 / 1;
+            object-fit: cover;
+            object-position: center;
+        }
+        .brand-hero-visual figcaption {
+            margin-top: 12px;
+            color: #55745c;
+            font-size: .75rem;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+        }
+
+        /* ---------- Existing photo and film feature, now section two ---------- */
+        .hero-followup {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: #ffffff;
+            overflow: hidden;
+            isolation: isolate;
+            background-color: #0b1d13;
+            font-family: 'Manrope', sans-serif;
+        }
+        .hero-media {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('hero 2.png');
+            background-size: cover;
+            background-position: center;
+            animation: heroSlideshow 20s infinite ease-in-out;
+            transition: transform 0.5s ease;
+        }
+        @keyframes heroSlideshow {
+            0%, 22%   { background-image: url('hero 2.png'); }
+            25%, 47%  { background-image: url('hero.png'); }
+            50%, 72%  { background-image: url('https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=1920&q=80'); }
+            75%, 97%  { background-image: url('https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=1920&q=80'); }
+            100%      { background-image: url('hero 2.png'); }
+        }
+        /* Lighter overlay — keeps text readable but preserves colour */
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.25) 0%,
+                rgba(11, 29, 19, 0.45) 60%,
+                rgba(11, 29, 19, 0.65) 100%
+            );
+            z-index: 1;
+        }
+        .hero-media video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            z-index: 2;
+        }
+        .hero-media video.active { opacity: 1; }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 120px 24px 60px 24px;
+            box-sizing: border-box;
+        }
+        .hero-copy { max-width: 650px; }
+        .hero-eyebrow {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.85rem;
+            color: #f3c87a;
+            font-weight: 700;
+            margin-bottom: 12px;
+            text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+        }
+        .hero-copy h1, .hero-copy h2 {
+            font-family: 'DM Serif Display', serif;
+            font-size: clamp(2.2rem, 5vw, 3.8rem);
+            line-height: 1.15;
+            margin: 0 0 20px 0;
+            font-weight: 400;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+            text-shadow: 0 2px 12px rgba(0,0,0,0.6);
+        }
+        .hero-copy p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #ffffff;
+            margin: 0 0 28px 0;
+            max-width: 540px;
+            text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+        .hero-buttons .button {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 6px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            font-family: 'Manrope', sans-serif;
+        }
+        .hero-buttons .button.primary {
+            background-color: #1b5e3a;
+            color: #ffffff;
+            border: 1px solid #2db871;
+        }
+        .hero-buttons .button.primary:hover {
+            background-color: #2db871;
+            transform: translateY(-2px);
+        }
+        .hero-buttons .button:not(.primary) {
+            background-color: rgba(255,255,255,0.15);
+            color: #ffffff;
+            border: 1px solid rgba(255,255,255,0.5);
+            backdrop-filter: blur(8px);
+        }
+        .hero-buttons .button:not(.primary):hover {
+            background-color: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        .hero-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .hero-tags li {
+            background: rgba(0,0,0,0.35);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #ffffff;
+            font-weight: 600;
+            border: 1px solid rgba(255,255,255,0.3);
+            backdrop-filter: blur(4px);
+            text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+        }
+        .hero-slogan {
+            margin-top: 24px;
+            font-style: italic;
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.3rem;
+            color: #ffe9c7;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+        }
+        .hero-bottom {
+            position: relative;
+            z-index: 3;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px 32px 24px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .scroll-indicator {
+            font-size: 0.85rem;
+            color: #ffffff;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+        }
+        .hero-video-toggle {
+            background: rgba(0,0,0,0.4);
+            border: 1px solid rgba(255,255,255,0.5);
+            color: #ffffff;
+            padding: 8px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            backdrop-filter: blur(6px);
+            transition: background 0.3s ease;
+            font-weight: 600;
+            font-family: 'Manrope', sans-serif;
+        }
+        .hero-video-toggle:hover {
+            background: rgba(0,0,0,0.65);
+        }
+        .parallax-copy p { color: rgba(255, 255, 255, .94); }
+        .catalogue-frame {
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, .2);
+            background: #e8e7e1;
+        }
+        .catalogue-frame iframe {
+            display: block;
+            width: 100%;
+            height: clamp(720px, 92vh, 1180px);
+            border: 0;
+        }
+
+        /* ---------- Logo sizing ---------- */
+        .logo-img { height: 40px; width: auto; display: block; }
+        .footer-logo-img { height: 36px; width: auto; }
+
+        /* ---------- Background video styling ---------- */
+        .video-band {
+            position: relative;
+            overflow: hidden;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+        }
+        .video-band video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+        .video-band .container {
+            position: relative;
+            z-index: 2;
+        }
+        .video-band::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(11, 29, 19, 0.55);
+            z-index: 1;
+        }
+
+        /* ---------- Play chips / modal ---------- */
+        .play-chip {
+            background: rgba(0,0,0,0.6);
+            color: #fff;
+            border: none;
+            border-radius: 40px;
+            padding: 10px 18px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            backdrop-filter: blur(4px);
+            transition: background 0.2s;
+            cursor: pointer;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 600;
+        }
+        .play-chip:hover { background: rgba(0,0,0,0.8); }
+        .play-button {
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.5);
+            color: #fff;
+            width: 48px;
+            height: 48px;
+            padding: 0;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(4px);
+            cursor: pointer;
+            transition: background 0.2s;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 600;
+        }
+        .play-button:hover { background: rgba(255,255,255,0.35); }
+        .play-button svg { width: 18px; height: 18px; display: block; }
+        .play-button .icon-play { display: none; }
+        .play-button.is-paused .icon-pause { display: none; }
+        .play-button.is-paused .icon-play { display: block; }
+        .modal video { width: 100%; max-height: 70vh; border-radius: 12px; background: #000; }
+        .modal-inner { max-width: 900px; }
+
+        /* ---------- Marquee ---------- */
+        .marquee { overflow: hidden; white-space: nowrap; }
+        .marquee-track { display: inline-block; animation: marquee 30s linear infinite; }
+        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+        /* ---------- Image fit ---------- */
+        .card-media img, .frame img, .journal-item img {
+            width: 100%; height: 100%; object-fit: cover; display: block;
+        }
+        .journal-item {
+            border: none; padding: 0; background: none; cursor: pointer;
+            overflow: hidden; border-radius: 16px;
+        }
+
+        /* ---------- Responsive ---------- */
+        @media (max-width: 768px) {
+            .brand-hero-inner { grid-template-columns: 1fr; gap: 32px; }
+            .brand-hero-visual { max-width: 560px; }
+            .hero-content { padding-top: 100px; }
+            .hero-bottom { flex-direction: column; gap: 12px; align-items: flex-start; }
+        }
+
+        /* ---------- Homepage opening and motion ---------- */
+        .brand-hero {
+            min-height: min(820px, calc(100svh - var(--topbar-h)));
+            display: flex;
+            align-items: center;
+            padding: 132px 24px 72px;
+            color: #fff;
+            background: #18352a;
+            isolation: isolate;
+        }
+        .brand-hero::after {
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            background: linear-gradient(90deg, rgba(8, 29, 20, .86) 0%, rgba(8, 29, 20, .56) 48%, rgba(8, 29, 20, .08) 100%), linear-gradient(0deg, rgba(8, 29, 20, .38), transparent 55%);
+            content: "";
+        }
+        .brand-hero-inner {
+            position: static;
+            z-index: auto;
+            width: min(1200px, 100%);
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
+        .brand-hero-copy { position: relative; z-index: 1; max-width: 760px; animation: heroCopyIn .9s var(--ease) both; }
+        .brand-hero-kicker { color: #e0bd78; }
+        .brand-hero h1 {
+            color: #fff;
+            font-size: 6.5rem;
+            line-height: .9;
+        }
+        .brand-hero-lede { color: rgba(255, 255, 255, .88); font-size: 1.125rem; }
+        .brand-hero-actions a { min-height: 52px; border-color: rgba(255, 255, 255, .78); color: #fff; }
+        .brand-hero-actions a:first-child { background: #e2bd76; border-color: #e2bd76; color: #18352a; }
+        .brand-hero-actions a:first-child:hover { background: #f0d49a; border-color: #f0d49a; }
+        .brand-hero-actions a:not(:first-child):hover { background: rgba(255, 255, 255, .16); }
+        .brand-hero-visual {
+            position: absolute;
+            z-index: -2;
+            inset: 0;
+            max-width: none;
+            overflow: hidden;
+        }
+        .brand-hero-visual img {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: auto;
+            object-fit: cover;
+            object-position: center 48%;
+            animation: heroImageIn 1.4s var(--ease) both;
+            will-change: transform;
+        }
+        .brand-hero .hero-tags { margin-top: 26px; }
+        .hero-followup {
+            min-height: 0;
+            display: grid;
+            grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+            align-items: center;
+            gap: clamp(36px, 7vw, 88px);
+            padding: clamp(64px, 8vw, 104px) max(24px, calc((100vw - 1200px) / 2));
+            background: #f7f3ea;
+            color: #18352a;
+        }
+        .hero-content {
+            grid-column: 1;
+            grid-row: 1;
+            width: auto;
+            max-width: 540px;
+            margin: 0;
+            padding: 0;
+        }
+        .hero-copy { max-width: 540px; }
+        .hero-eyebrow { color: #55745c; text-shadow: none; }
+        .hero-copy h2 {
+            max-width: 16ch;
+            margin: 14px 0 20px;
+            color: #18352a;
+            font-size: clamp(2.5rem, 4.1vw, 3.7rem);
+            text-shadow: none;
+        }
+        .hero-copy p { max-width: 500px; color: #59665d; text-shadow: none; }
+        .hero-tags { margin-top: 24px; }
+        .hero-tags li {
+            border-color: rgba(24, 53, 42, .22);
+            color: #365244;
+            text-shadow: none;
+            backdrop-filter: none;
+        }
+        .hero-media {
+            position: relative;
+            inset: auto;
+            grid-column: 2;
+            grid-row: 1;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4 / 3;
+            background-image: url('hero 2.png');
+            animation: none;
+        }
+        .hero-overlay { background: linear-gradient(0deg, rgba(11, 29, 19, .55), rgba(11, 29, 19, .08)); }
+        .hero-video-toggle { position: absolute; right: 18px; bottom: 18px; z-index: 3; }
+        .hero-bottom { display: none; }
+        .whatsapp-cta {
+            position: fixed;
+            right: 24px;
+            bottom: 24px;
+            z-index: 120;
+            display: inline-flex;
+            width: 58px;
+            height: 58px;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(255, 255, 255, .72);
+            border-radius: 999px;
+            background: #16834b;
+            box-shadow: 0 12px 30px rgba(12, 40, 26, .28);
+            color: #fff;
+            transition: transform .25s var(--ease), background-color .25s ease, box-shadow .25s ease;
+        }
+        .whatsapp-cta:hover { transform: translateY(-3px); background: #116d3e; box-shadow: 0 16px 36px rgba(12, 40, 26, .34); }
+        .whatsapp-cta-icon { width: 30px; height: 30px; display: block; }
+        .js .reveal { opacity: 0; transform: translateY(24px); }
+        .js .reveal.is-visible { opacity: 1; transform: none; }
+        .stat.reveal:nth-child(2), .value-card.reveal:nth-child(2) { transition-delay: .08s; }
+        .stat.reveal:nth-child(3), .value-card.reveal:nth-child(3) { transition-delay: .16s; }
+        .stat.reveal:nth-child(4) { transition-delay: .24s; }
+        @keyframes heroCopyIn { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes heroImageIn { from { opacity: .75; transform: scale(1.06); } to { opacity: 1; transform: scale(1); } }
+        @media (max-width: 768px) {
+            .brand-hero { min-height: min(760px, calc(100svh - var(--topbar-h))); padding: 132px 24px 76px; }
+            .brand-hero::after { background: linear-gradient(90deg, rgba(8, 29, 20, .78), rgba(8, 29, 20, .32)), linear-gradient(0deg, rgba(8, 29, 20, .58), transparent 75%); }
+            .brand-hero-visual { position: absolute; inset: 0; max-width: none; }
+            .brand-hero h1 { font-size: 4.5rem; }
+            .hero-followup { grid-template-columns: 1fr; gap: 34px; padding: 64px 24px; }
+            .hero-media { grid-column: 1; grid-row: 1; aspect-ratio: 16 / 10; }
+            .hero-content { grid-column: 1; grid-row: 2; max-width: none; }
+            .hero-copy h2 { font-size: 2.75rem; }
+        }
+        @media (max-width: 480px) {
+            .brand-hero { min-height: 690px; padding: 118px 20px 82px; }
+            .brand-hero h1 { font-size: 3.75rem; }
+            .brand-hero-actions { align-items: stretch; flex-direction: column; }
+            .brand-hero-actions a { width: 100%; }
+            .brand-hero .hero-tags { gap: 8px; }
+            .brand-hero .hero-tags li { padding: 7px 10px; font-size: .66rem; }
+            .hero-copy h2 { font-size: 2.4rem; }
+            .whatsapp-cta { right: 14px; bottom: 14px; width: 52px; height: 52px; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .brand-hero-copy, .brand-hero-visual img { animation: none; }
+            .brand-hero-visual img { transform: none !important; }
+        }
+    </style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- =========================================================
+     TOP BAR
+========================================================== -->
+<div class="topbar">
+    <span>Elwana Blooms &middot; Kenya &middot; Fresh cut flowers</span>
+    <span>International buyers &middot; <a href="contact.html">Export enquiries welcome</a></span>
+</div>
+
+<!-- =========================================================
+     NAVIGATION
+========================================================== -->
+<header class="nav" id="navbar">
+    <div class="container nav-inner">
+        <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+            <img src="elwana logo.png" alt="Elwana Blooms logo" class="logo-img"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+            <span class="logo-text" style="font-weight: 700; font-size: 1.2rem; letter-spacing: 1px; color: inherit;">ELWANA BLOOMS</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary">
+            <a href="flowers.html">Flowers</a>
+            <a href="#catalogue-preview">Catalogue</a>
+            <a href="process.html">Process</a>
+            <a href="export.html">Export</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="videos.html">Films</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="contact.html#enquiry" class="nav-cta">Request a quote</a>
+        <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">&#9776;</button>
+    </div>
+</header>
+
+<!-- =========================================================
+     MOBILE MENU
+========================================================== -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="flowers.html">Flowers</a>
+    <a href="#catalogue-preview">Catalogue</a>
+    <a href="process.html">Process</a>
+    <a href="export.html">Export</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="videos.html">Films</a>
+    <a href="sustainability.html">Sustainability</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html#enquiry" class="mobile-menu-foot">Request a quote</a>
+</div>
+
+<main id="main">
+
+<!-- =========================================================
+     BRAND HERO
+========================================================== -->
+<section class="brand-hero" aria-labelledby="brand-heading">
+    <div class="brand-hero-inner">
+        <div class="brand-hero-copy">
+            <p class="brand-hero-kicker">Kenyan flower grower &amp; export partner</p>
+            <h1 id="brand-heading"><span>Elwana</span><span>Blooms</span></h1>
+            <p class="brand-hero-lede">Kenyan-grown fresh-cut flowers, carefully prepared for buyers around the world.</p>
+            <div class="brand-hero-actions">
+                <a href="flowers.html">Explore our flowers</a>
+                <a href="contact.html#enquiry">Talk to our export team</a>
+            </div>
+            <ul class="hero-tags" aria-label="Our export capabilities">
+                <li>40+ varieties</li>
+                <li>50&ndash;90cm stems</li>
+                <li>48h cold chain</li>
+                <li>Phytosanitary certified</li>
+            </ul>
+        </div>
+        <figure class="brand-hero-visual">
+            <img src="hero 2.png" alt="Fresh flowers grown and prepared by Elwana Blooms in Kenya" fetchpriority="high" decoding="async">
+            <figcaption>Grown in Kenya. Prepared for the world.</figcaption>
+        </figure>
+    </div>
+</section>
+
+<!-- =========================================================
+     BUYER ASSURANCE STRIP
+========================================================== -->
+<section class="stats" aria-label="Elwana Blooms export capabilities">
+    <div class="container stats-grid">
+        <div class="stat"><div class="stat-number">01</div><div class="stat-label">Kenyan growing origin</div><div class="stat-note">Highland farms in the Lake Naivasha basin</div></div>
+        <div class="stat"><div class="stat-number">02</div><div class="stat-label">Export-ready handling</div><div class="stat-note">Graded, bunched and boxed to buyer spec</div></div>
+        <div class="stat"><div class="stat-number">03</div><div class="stat-label">International enquiries</div><div class="stat-note">Europe, Gulf and UK programme supply</div></div>
+        <div class="stat"><div class="stat-number">04</div><div class="stat-label">Quality-focused process</div><div class="stat-note">Documented at every stage of the journey</div></div>
+    </div>
+</section>
+
+<!-- =========================================================
+     EXISTING PHOTO AND FILM FEATURE — SECTION TWO
+========================================================== -->
+<section class="hero-followup">
+    <div class="hero-media" aria-hidden="true">
+        <video id="heroFilm" autoplay muted loop playsinline preload="auto"
+               poster="https://assets.mixkit.co/videos/1895/1895-thumb-720-0.jpg"
+               tabindex="-1">
+            <source src="https://assets.mixkit.co/videos/1895/1895-1080.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <button class="hero-video-toggle" type="button" data-play-toggle="heroFilm" aria-label="Pause background film">Pause film</button>
+    </div>
+
+    <div class="hero-content">
+        <div class="hero-copy">
+            <div class="hero-eyebrow">From Kenya, with care</div>
+            <h2>Every stem, ready for the journey.</h2>
+            <p>
+                From harvest to hydration, our flowers are carefully handled and prepared for international markets with consistency and attention to detail.
+            </p>
+            <ul class="hero-tags">
+                <li>Harvested with care</li>
+                <li>Graded to specification</li>
+                <li>Cold-chain handling</li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+
+<!-- =========================================================
+     MARQUEE
+========================================================== -->
+<div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+        <span>Garden roses</span><span>Spray roses</span><span>Hypericum</span>
+        <span>Carnations</span><span>Peonies</span><span>Chrysanthemums</span>
+        <span>Orchids</span><span>Sunflowers</span><span>Seasonal fillers</span>
+        <span>Garden roses</span><span>Spray roses</span><span>Hypericum</span>
+        <span>Carnations</span><span>Peonies</span><span>Chrysanthemums</span>
+        <span>Orchids</span><span>Sunflowers</span><span>Seasonal fillers</span>
+    </div>
+</div>
+
+<!-- =========================================================
+     ABOUT
+========================================================== -->
+<section class="section bg-white" id="about">
+    <div class="container about-grid">
+        <div class="reveal" style="position:relative">
+            <div class="frame frame-tall">
+                <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Paper-wrapped_bouquet_%28Unsplash%29.jpg/1920px-Paper-wrapped_bouquet_%28Unsplash%29.jpg"
+                     alt="Paper-wrapped bouquet of freshly prepared cut flowers"
+                     loading="lazy" decoding="async" width="1920" height="2400">
+            </div>
+            <div class="about-badge">
+                <strong>48h</strong>
+                <span>Field to flight</span>
+            </div>
+        </div>
+        <div class="about-copy reveal">
+            <div class="eyebrow">About Elwana Blooms</div>
+            <h2>Grown in Kenya.<br>Prepared for the world.</h2>
+            <p>Elwana Blooms connects the beauty of Kenyan-grown flowers with buyers and floral markets around the world. We work directly with our own growing partners rather than through brokers, so quality stays consistent from the first cut to the final carton.</p>
+            <p>From cultivation and harvesting to grading, packing and export, every stage is approached with attention to freshness, consistency and presentation.</p>
+            <ul class="about-points">
+                <li><div><strong>Direct farm relationships</strong><span>We buy from growers we visit, with agreed varieties and quality benchmarks.</span></div></li>
+                <li><div><strong>Specification-led grading</strong><span>Stem length, bud openness and head size graded to each buyer's brief.</span></div></li>
+                <li><div><strong>Cold chain from harvest</strong><span>Hydration, conditioning and cool-store handling protect vase life in transit.</span></div></li>
+            </ul>
+            <a href="about.html" class="text-link">More about Elwana <span>&rarr;</span></a>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================
+     PARALLAX ORIGIN BAND
+========================================================== -->
+<section class="parallax">
+    <div class="parallax-media" style="background-image:url('https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Kiambethu%2C_Kenya_%2845431084345%29.jpg/1920px-Kiambethu%2C_Kenya_%2845431084345%29.jpg')"></div>
+    <div class="container">
+        <div class="parallax-copy reveal">
+            <div class="eyebrow">Our origin</div>
+            <h2>From Kenyan soil<br>to global markets.</h2>
+            <p>Kenya's highland climate gives long daylight hours, cool nights and consistent growing conditions. Elwana Blooms works with farms around Lake Naivasha and the surrounding highlands, where roses and hypericum are grown for export all year round.</p>
+            <ul class="parallax-facts">
+                <li>1,800m altitude</li>
+                <li>Year-round production</li>
+                <li>Flight time to Europe: ~8h</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================
+     FLOWER COLLECTION
+========================================================== -->
+<section class="section flowers bg-cream" id="flowers">
+    <div class="container">
+        <div class="section-heading reveal">
+            <div><div class="eyebrow">The collection</div><h2>Our flowers</h2></div>
+            <p>A sample of the export catalogue. Varieties, colours, stem lengths and weekly availability are confirmed with each shipment.</p>
+        </div>
+        <div data-carousel>
+            <div class="carousel-track" data-carousel-track>
+                <article class="card">
+                    <div class="card-media"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/A_red_garden_rose_in_Kolkata.jpg/1280px-A_red_garden_rose_in_Kolkata.jpg" alt="Red garden rose in bloom" loading="lazy" decoding="async" width="1280" height="853"></div>
+                    <div class="card-body"><div class="eyebrow">Cut flowers</div><h3>Garden Roses</h3><p>Large-headed blooms with high petal count, graded by stem length and bud stage.</p><div class="card-meta"><span>40&ndash;70cm</span><span>Year round</span></div></div>
+                </article>
+                <article class="card">
+                    <div class="card-media"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/A_close-up_of_climbing_roses.jpg/1280px-A_close-up_of_climbing_roses.jpg" alt="Climbing roses seen close up" loading="lazy" decoding="async" width="1280" height="853"></div>
+                    <div class="card-body"><div class="eyebrow">Cut flowers</div><h3>Spray Roses</h3><p>Multi-headed trusses, valued for bouquets, events and high-turnover retail.</p><div class="card-meta"><span>40&ndash;60cm</span><span>Year round</span></div></div>
+                </article>
+                <article class="card">
+                    <div class="card-media"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Red_Carnations_flower.jpg/1280px-Red_Carnations_flower.jpg" alt="Red carnation flowers" loading="lazy" decoding="async" width="1280" height="1714"></div>
+                    <div class="card-body"><div class="eyebrow">Cut flowers</div><h3>Carnations</h3><p>Long vase life and a wide colour range, supplied to flexible buyer specifications.</p><div class="card-meta"><span>50&ndash;70cm</span><span>Year round</span></div></div>
+                </article>
+                <article class="card">
+                    <div class="card-media"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Rose_Flower_Harvesting.jpg/1920px-Rose_Flower_Harvesting.jpg" alt="Rose flowers being harvested" loading="lazy" decoding="async" width="1280" height="960"></div>
+                    <div class="card-body"><div class="eyebrow">Filler &amp; berry</div><h3>Hypericum</h3><p>Seasonal berry and bud lines that add colour and texture to mixed bouquets.</p><div class="card-meta"><span>50&ndash;80cm</span><span>Seasonal</span></div></div>
+                </article>
+                <article class="card">
+                    <div class="card-media"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Pink_Peony_Flower.jpg/1280px-Pink_Peony_Flower.jpg" alt="Pink peony flower" loading="lazy" decoding="async" width="1280" height="961"></div>
+                    <div class="card-body"><div class="eyebrow">Premium</div><h3>Peonies</h3><p>High-value stems flown out within hours of cutting during the short season.</p><div class="card-meta"><span>60&ndash;90cm</span><span>Limited season</span></div></div>
+                </article>
+                <article class="card">
+                    <div class="card-media"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Chrysanthemum_November_2015_Sochi.JPG/1280px-Chrysanthemum_November_2015_Sochi.JPG" alt="Chrysanthemum flowers" loading="lazy" decoding="async" width="1280" height="1000"></div>
+                    <div class="card-body"><div class="eyebrow">Cut flowers</div><h3>Chrysanthemums</h3><p>Reliable volume flower with excellent vase life, available in standard colours.</p><div class="card-meta"><span>50&ndash;80cm</span><span>Year round</span></div></div>
+                </article>
+                <article class="card">
+                    <div class="card-media"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Pink-Tulip-Fields_Bollenstreek_Hillegom.jpg/1280px-Pink-Tulip-Fields_Bollenstreek_Hillegom.jpg" alt="Rows of pink tulips in a field" loading="lazy" decoding="async" width="1280" height="960"></div>
+                    <div class="card-body"><div class="eyebrow">Bulb flowers</div><h3>Tulips</h3><p>Programmed volumes for wholesale and retail, with tight grading on stem uniformity.</p><div class="card-meta"><span>35&ndash;55cm</span><span>Seasonal</span></div></div>
+                </article>
+                <article class="card">
+                    <div class="card-media"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Sunflower_field_-_panoramio_%2811%29.jpg/1280px-Sunflower_field_-_panoramio_%2811%29.jpg" alt="Field of sunflowers" loading="lazy" decoding="async" width="1280" height="853"></div>
+                    <div class="card-body"><div class="eyebrow">Volume</div><h3>Sunflowers</h3><p>Large-headed sunflowers for wholesale and food-grade floristry programmes.</p><div class="card-meta"><span>60&ndash;90cm</span><span>Seasonal</span></div></div>
+                </article>
+                <article class="card">
+                    <div class="card-media"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Eucalyptus_A_leaves_%288754103462%29.jpg/1280px-Eucalyptus_A_leaves_%288754103462%29.jpg" alt="Eucalyptus foliage" loading="lazy" decoding="async" width="1280" height="720"></div>
+                    <div class="card-body"><div class="eyebrow">Foliage</div><h3>Eucalyptus &amp; Greens</h3><p>Hardy foliage lines used to give bouquets structure and a natural finish.</p><div class="card-meta"><span>50&ndash;80cm</span><span>Year round</span></div></div>
+                </article>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-button" type="button" data-carousel-prev aria-label="Previous flowers">&larr;</button>
+                <button class="slider-button" type="button" data-carousel-next aria-label="Next flowers">&rarr;</button>
+            </div>
+        </div>
+        <a href="CATALOGUE.html" class="text-link">View the full catalogue <span>&rarr;</span></a>
+    </div>
+</section>
+
+<section class="section bg-forest on-dark" id="catalogue-preview">
+    <div class="container">
+        <div class="section-heading reveal">
+            <div><div class="eyebrow">Explore the collection</div><h2>Floral catalogue</h2></div>
+            <div>
+                <p>Browse the Elwana Blooms collection, with flower details and botanical references.</p>
+                <a href="CATALOGUE.html" class="text-link">Open the full catalogue <span>&rarr;</span></a>
+            </div>
+        </div>
+        <div class="catalogue-frame reveal">
+            <iframe src="CATALOGUE.html" title="Elwana Blooms floral catalogue" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================
+     PROCESS
+========================================================== -->
+<section class="section bg-forest on-dark" id="process" data-process>
+    <div class="container">
+        <div class="eyebrow">From farm to flight</div>
+        <h2>Every stage matters.</h2>
+        <div class="process-layout">
+            <div class="process-nav">
+                <button class="process-button active" type="button" data-index="0" data-image="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Pearl_flowers_limited_flower_farm_in_Rubaare_Ntugamo_District_in_Uganda_02.jpg/1920px-Pearl_flowers_limited_flower_farm_in_Rubaare_Ntugamo_District_in_Uganda_02.jpg" data-image-alt="Roses growing under cover on a highland flower farm" data-label="01 &middot; Growing" data-title="Care begins at the source." data-body="Varieties are chosen with our growers and matched to soil, altitude and buyer demand before a single stem is planted."><strong>01</strong><span>Grow</span></button>
+                <button class="process-button" type="button" data-index="1" data-image="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Rose_Flower_Harvesting.jpg/1920px-Rose_Flower_Harvesting.jpg" data-image-alt="Roses being harvested by hand" data-label="02 &middot; Harvest" data-title="The right flowers, at the right moment." data-body="Stems are cut in the cool early morning at the bud stage buyers specify, then moved to hydration within minutes."><strong>02</strong><span>Harvest</span></button>
+                <button class="process-button" type="button" data-index="2" data-image="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Garden_roses_4.jpg/1280px-Garden_roses_4.jpg" data-image-alt="Garden roses graded and bunched for packing" data-label="03 &middot; Grade" data-title="Consistency starts with careful selection." data-body="Every stem is checked for length, caliper, petal count and blemish, then sorted into specification bands."><strong>03</strong><span>Grade</span></button>
+                <button class="process-button" type="button" data-index="3" data-image="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Handmade_bouquets.jpg/1920px-Handmade_bouquets.jpg" data-image-alt="Bunches of flowers prepared for export packing" data-label="04 &middot; Pack" data-title="Prepared for the journey ahead." data-body="Stems are bunched, sleeved, labelled and boxed to the buyer's carton format, then held in the cool store."><strong>04</strong><span>Pack</span></button>
+                <button class="process-button" type="button" data-index="4" data-image="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/CBP_Inspects_Cut_flowers_Dulles_International_Airport_04.jpg/1920px-CBP_Inspects_Cut_flowers_Dulles_International_Airport_04.jpg" data-image-alt="Cut flowers being inspected on arrival at an international airport" data-label="05 &middot; Export" data-title="From Kenya to international markets." data-body="Consolidated at Nairobi, cleared with phytosanitary documentation and uplifted on the agreed flight."><strong>05</strong><span>Export</span></button>
+            </div>
+            <div class="process-stage" data-process-image>
+                <img class="loaded" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Pearl_flowers_limited_flower_farm_in_Rubaare_Ntugamo_District_in_Uganda_02.jpg/1920px-Pearl_flowers_limited_flower_farm_in_Rubaare_Ntugamo_District_in_Uganda_02.jpg" alt="Roses growing under cover on a highland flower farm" loading="lazy" decoding="async" width="1920" height="1082">
+                <div class="process-caption" data-process-text>
+                    <div class="eyebrow" data-step-label>01 &middot; Growing</div>
+                    <h3 data-step-title>Care begins at the source.</h3>
+                    <p data-step-body>Varieties are chosen with our growers and matched to soil, altitude and buyer demand before a single stem is planted.</p>
+                </div>
+            </div>
+        </div>
+        <a href="process.html" class="text-link">Read the full process <span>&rarr;</span></a>
+    </div>
+</section>
+
+<!-- =========================================================
+     BRAND FILM
+========================================================== -->
+<section class="video-band">
+    <video id="brandFilm" autoplay muted loop playsinline preload="auto" poster="https://assets.mixkit.co/videos/40295/40295-thumb-720-0.jpg" aria-hidden="true" tabindex="-1">
+        <source src="https://assets.mixkit.co/videos/40295/40295-1080.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <div class="eyebrow" style="color:#f3c87a; position:relative; z-index:2;">The Elwana story</div>
+        <h2 style="position:relative; z-index:2;">Freshness has a journey.</h2>
+        <p style="position:relative; z-index:2;">Watch how stems move from a highland greenhouse to a carton on an international flight.</p>
+        <button class="play-button" type="button" data-play-toggle="brandFilm" aria-label="Pause background film" title="Pause background film" style="position:relative; z-index:2;">
+            <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+            <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 12 7-12 7z" fill="currentColor"/></svg>
+        </button>
+        <div class="video-band-note" style="position:relative; z-index:2; margin-top:16px;">Greenhouse film &middot; Lake Naivasha highlands</div>
+    </div>
+</section>
+
+<!-- =========================================================
+     FILM PREVIEW
+========================================================== -->
+<section class="section bg-white">
+    <div class="container">
+        <div class="section-heading reveal">
+            <div><div class="eyebrow">Watch</div><h2>Films from the farms</h2></div>
+            <p>Short films of growing, grading and packing. The full library covers eighteen varieties and processes.</p>
+        </div>
+        <div class="card-grid cols-3">
+            <article class="card reveal">
+                <div class="card-media wide">
+                    <img src="https://assets.mixkit.co/videos/1895/1895-thumb-720-0.jpg" alt="Flowers and green plants in a greenhouse" loading="lazy" decoding="async" width="1280" height="720">
+                    <button class="play-chip" type="button" data-video="https://assets.mixkit.co/videos/1895/1895-1080.mp4" data-caption="Flowers and green plants &middot; greenhouse growing"><span aria-hidden="true">&#9654;</span><span class="sr-only">Play film</span></button>
+                </div>
+                <div class="card-body"><h3>Inside the greenhouse</h3><p>How light, temperature and water are managed through the growing cycle.</p><div class="card-meta"><span>Growing</span><span>1080p</span></div></div>
+            </article>
+            <article class="card reveal">
+                <div class="card-media wide">
+                    <img src="https://assets.mixkit.co/videos/6824/6824-thumb-720-0.jpg" alt="Close up of a roses bouquet" loading="lazy" decoding="async" width="1280" height="720">
+                    <button class="play-chip" type="button" data-video="https://assets.mixkit.co/videos/6824/6824-720.mp4" data-caption="Roses bouquet closeup &middot; grading and bunching"><span aria-hidden="true">&#9654;</span><span class="sr-only">Play film</span></button>
+                </div>
+                <div class="card-body"><h3>Bunching roses</h3><p>Stems turned, counted and sleeved to a fixed count per bunch.</p><div class="card-meta"><span>Grading</span><span>720p</span></div></div>
+            </article>
+            <article class="card reveal">
+                <div class="card-media wide">
+                    <img src="https://assets.mixkit.co/videos/1168/1168-thumb-720-0.jpg" alt="Pink flowers moving in the breeze" loading="lazy" decoding="async" width="1280" height="720">
+                    <button class="play-chip" type="button" data-video="https://assets.mixkit.co/videos/1168/1168-1080.mp4" data-caption="Pink flowers wave in the breeze &middot; open field production"><span aria-hidden="true">&#9654;</span><span class="sr-only">Play film</span></button>
+                </div>
+                <div class="card-body"><h3>Open field colour</h3><p>Bougainvillea and seasonal stems grown in full sun.</p><div class="card-meta"><span>Growing</span><span>1080p</span></div></div>
+            </article>
+        </div>
+        <a href="videos.html" class="text-link">Open the film library <span>&rarr;</span></a>
+    </div>
+</section>
+
+<!-- =========================================================
+     EXPORT MAP — fixed loading
+========================================================== -->
+<section class="section bg-cream" id="markets">
+    <div class="container">
+        <div class="section-heading reveal">
+            <div><div class="eyebrow">International reach</div><h2>From Kenya to the world.</h2></div>
+            <p>Select a marker to see how a shipment moves from our growing partners to your market.</p>
+        </div>
+        <div class="map-wrap reveal">
+            <div id="map" class="market-map" data-market-map>
+                <div class="map-viewport" data-map-viewport tabindex="0" role="group" aria-label="Interactive map of Kenya's flower export markets">
+                    <div class="map-scene" data-map-scene>
+                        <img class="map-art" src="assets/world-map.svg" alt="" width="1600" height="800" draggable="false">
+                        <svg class="map-routes" viewBox="0 0 1600 800" aria-hidden="true"><path data-map-route></path></svg>
+                        <div class="map-markers" data-map-markers></div>
+                    </div>
+                </div>
+                <div class="map-controls" role="group" aria-label="Map controls">
+                    <button type="button" data-map-zoom="in" aria-label="Zoom in">+</button>
+                    <button type="button" data-map-zoom="reset" aria-label="Reset map view">Reset</button>
+                    <button type="button" data-map-zoom="out" aria-label="Zoom out">&minus;</button>
+                </div>
+                <div class="map-legend" aria-label="Map legend">
+                    <span><i class="origin-key" aria-hidden="true"></i>Origin</span>
+                    <span><i class="market-key" aria-hidden="true"></i>Import markets</span>
+                </div>
+            </div>
+            <div class="map-panel">
+                <div class="eyebrow" data-map-kind>Origin</div>
+                <h3 data-map-title>Kenya</h3>
+                <p data-map-body>Growing, grading, packing and consolidation take place here before every shipment leaves the country.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================
+     SUSTAINABILITY
+========================================================== -->
+<section class="section bg-sand">
+    <div class="container">
+        <div class="section-head-center reveal">
+            <div class="eyebrow">Our approach</div>
+            <h2>Growing with purpose.</h2>
+            <p>We publish what we can evidence. Where a practice is still being measured, we say so rather than overstate it.</p>
+        </div>
+        <div class="value-grid">
+            <article class="value-card reveal"><div class="value-number">01</div><h3>Responsible growing</h3><p>IPM-led pest management, drip irrigation and monitored water use across our partner farms.</p><ul><li>Reduced chemical load</li><li>Water recycling at pack houses</li><li>Soil health tracked annually</li></ul></article>
+            <article class="value-card reveal"><div class="value-number">02</div><h3>People</h3><p>Fair terms, safe working conditions and training that keeps skilled growers on the farms.</p><ul><li>Written supply agreements</li><li>Harvest handled in cool hours</li><li>Skills programmes for farm staff</li></ul></article>
+            <article class="value-card reveal"><div class="value-number">03</div><h3>Traceability</h3><p>Lot-level records that follow a carton from the field it was cut in to the market it lands in.</p><ul><li>Lot codes on every box</li><li>Phytosanitary documentation</li><li>Temperature logged in transit</li></ul></article>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================
+     JOURNAL PREVIEW
+========================================================== -->
+<section class="section bg-white" id="journal">
+    <div class="container">
+        <div class="section-heading reveal">
+            <div><div class="eyebrow">Visual journal</div><h2>Life behind the blooms.</h2></div>
+            <p>Photographs from the farms, the pack house and the markets our flowers reach.</p>
+        </div>
+        <div class="journal-grid reveal">
+            <button class="journal-item" type="button" data-lightbox data-lightbox-full="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Pearl_flowers_limited_flower_farm_in_Rubaare_Ntugamo_District_in_Uganda_03.jpg/1920px-Pearl_flowers_limited_flower_farm_in_Rubaare_Ntugamo_District_in_Uganda_03.jpg" data-lightbox-caption="Roses under cover">
+                <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Pearl_flowers_limited_flower_farm_in_Rubaare_Ntugamo_District_in_Uganda_03.jpg/1280px-Pearl_flowers_limited_flower_farm_in_Rubaare_Ntugamo_District_in_Uganda_03.jpg" alt="Rows of roses under cover on a flower farm" loading="lazy" decoding="async" width="1280" height="721"><span class="journal-label">Roses under cover</span>
+            </button>
+            <button class="journal-item" type="button" data-lightbox data-lightbox-full="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Bouquet_of_Red_Roses.jpg/1920px-Bouquet_of_Red_Roses.jpg" data-lightbox-caption="Bouquet of red roses">
+                <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Bouquet_of_Red_Roses.jpg/1280px-Bouquet_of_Red_Roses.jpg" alt="Bouquet of red roses" loading="lazy" decoding="async" width="1280" height="1707"><span class="journal-label">Bouquet of red roses</span>
+            </button>
+            <button class="journal-item" type="button" data-lightbox data-lightbox-full="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/24-12-%2771_Nairobi_-_Bloemenstal.jpg/1920px-24-12-%2771_Nairobi_-_Bloemenstal.jpg" data-lightbox-caption="Nairobi flower stalls">
+                <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/24-12-%2771_Nairobi_-_Bloemenstal.jpg/1280px-24-12-%2771_Nairobi_-_Bloemenstal.jpg" alt="Flower stalls in Nairobi" loading="lazy" decoding="async" width="1280" height="872"><span class="journal-label">Nairobi flower stalls</span>
+            </button>
+            <button class="journal-item" type="button" data-lightbox data-lightbox-full="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/A_bucket_of_flowers_%2826704433707%29.jpg/1920px-A_bucket_of_flowers_%2826704433707%29.jpg" data-lightbox-caption="A bucket of flowers">
+                <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/A_bucket_of_flowers_%2826704433707%29.jpg/1280px-A_bucket_of_flowers_%2826704433707%29.jpg" alt="A bucket filled with flowers" loading="lazy" decoding="async" width="1280" height="901"><span class="journal-label">A bucket of flowers</span>
+            </button>
+            <button class="journal-item" type="button" data-lightbox data-lightbox-full="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Ikebana-Dojo-Bonn-2019.jpg/1920px-Ikebana-Dojo-Bonn-2019.jpg" data-lightbox-caption="Floral arrangement workshop">
+                <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Ikebana-Dojo-Bonn-2019.jpg/1280px-Ikebana-Dojo-Bonn-2019.jpg" alt="Floral arrangement in a workshop" loading="lazy" decoding="async" width="1280" height="960"><span class="journal-label">Arrangement workshop</span>
+            </button>
+            <button class="journal-item" type="button" data-lightbox data-lightbox-full="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Lavender_field_in_Dr%C3%B4me_01.jpg/1920px-Lavender_field_in_Dr%C3%B4me_01.jpg" data-lightbox-caption="Lavender field in bloom">
+                <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Lavender_field_in_Dr%C3%B4me_01.jpg/1280px-Lavender_field_in_Dr%C3%B4me_01.jpg" alt="Lavender field in full bloom" loading="lazy" decoding="async" width="1280" height="852"><span class="journal-label">Lavender in bloom</span>
+            </button>
+        </div>
+        <a href="gallery.html" class="text-link">See the full journal <span>&rarr;</span></a>
+    </div>
+</section>
+
+<!-- =========================================================
+     ENQUIRY
+========================================================== -->
+<section class="section bg-forest on-dark" id="quote">
+    <div class="container quote-grid">
+        <div class="reveal">
+            <div class="eyebrow">International buyers</div>
+            <h2>Let's grow something beautiful together.</h2>
+            <p class="quote-intro">Tell us what you are looking for and the Elwana export team can follow up with the appropriate flower and shipment information.</p>
+        </div>
+        <form class="buyer-form reveal" data-enquiry-form novalidate>
+            <input type="text" name="company" placeholder="Company name" required>
+            <input type="text" name="contact" placeholder="Contact person" required>
+            <input type="email" name="email" placeholder="Email address" required>
+            <input type="tel" name="phone" placeholder="Phone / WhatsApp">
+            <select name="flower" aria-label="Flower or variety"><option value="">Flower / variety</option><option>Garden Roses</option><option>Spray Roses</option><option>Carnations</option><option>Hypericum</option><option>Peonies</option><option>Chrysanthemums</option><option>Other / mixed programme</option></select>
+            <input type="text" name="quantity" placeholder="Quantity / stems">
+            <input type="text" name="destination" placeholder="Destination country">
+            <input type="text" name="shipment_date" placeholder="Required delivery window">
+            <textarea name="requirements" placeholder="Tell us about your requirements"></textarea>
+            <button type="submit" data-label="Send export enquiry">Send export enquiry</button>
+            <p class="form-note">We use your details only to answer this enquiry. See our <a href="privacy.html" class="form-link">privacy notice</a>.</p>
+            <div class="form-message" data-form-message role="status" aria-live="polite"></div>
+        </form>
+    </div>
+</section>
+</main>
+
+<a class="whatsapp-cta" href="https://wa.me/254722671336?text=Hello%20Elwana%20Blooms%2C%20I%27d%20like%20to%20enquire%20about%20your%20flowers." target="_blank" rel="noopener noreferrer" aria-label="Chat with Elwana Blooms on WhatsApp" title="Chat with Elwana Blooms on WhatsApp">
+    <svg class="whatsapp-cta-icon" viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3.2a12.4 12.4 0 0 0-10.6 18.8L3.8 28l6.2-1.6A12.4 12.4 0 1 0 16 3.2Zm0 22.5c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-3.7 1 1-3.6-.3-.5A10 10 0 1 1 16 25.7Zm5.5-7.5c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.3 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.8-.7 2.1-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4Z"/></svg>
+</a>
+
+<!-- =========================================================
+     FOOTER
+========================================================== -->
+<footer>
+    <div class="container footer-grid">
+        <div>
+            <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 10px;">
+                <img src="elwana logo.png" alt="Elwana Blooms logo" class="footer-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                <span style="font-weight: 700; font-size: 1.1rem; color: #18352a;">ELWANA BLOOMS</span>
+            </a>
+            <p class="footer-description">Kenyan flowers, carefully prepared for international markets. Grown with our partner farms, graded to your specification and shipped cold from Nairobi.</p>
+            <ul class="footer-badges"><li>Phytosanitary</li><li>Cold chain</li><li>Lot traceability</li></ul>
+        </div>
+        <div class="footer-links"><h4>Explore</h4><a href="flowers.html">Flowers</a><a href="process.html">Our process</a><a href="export.html">Export</a><a href="gallery.html">Gallery</a><a href="videos.html">Films</a></div>
+        <div class="footer-links"><h4>Company</h4><a href="about.html">About</a><a href="sustainability.html">Sustainability</a><a href="contact.html">Contact</a><a href="contact.html#enquiry">Request a quote</a></div>
+        <div class="footer-links"><h4>Contact</h4>
+            <a href="mailto:elwanablooms@gmail.com">elwanablooms@gmail.com</a>
+            <a href="tel:+254722671336">+254 722 671 336</a>
+            <a href="contact.html">Ciata Mall, Runda</a>
+            <span style="display:block; margin-top:8px; font-size:0.85rem; color:#666;">Elwana Blooms Company Limited</span>
+        </div>
+    </div>
+    <div class="container copyright">
+        <span>&copy; <span data-year>2026</span> Elwana Blooms Company Limited. All rights reserved.</span>
+        <span><a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></span>
+    </div>
+</footer>
+
+<!-- =========================================================
+     VIDEO MODAL
+========================================================== -->
+<div class="modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Film player">
+    <div class="modal-inner">
+        <button class="modal-close" type="button" data-modal-close>Close</button>
+        <video controls playsinline preload="metadata"></video>
+        <p class="modal-caption" data-modal-caption></p>
+    </div>
+</div>
+
+<!-- =========================================================
+     LIGHTBOX
+========================================================== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" type="button" aria-label="Close image viewer">&times;</button>
+    <button class="lightbox-btn lightbox-prev" type="button" aria-label="Previous image">&larr;</button>
+    <img alt="">
+    <button class="lightbox-btn lightbox-next" type="button" aria-label="Next image">&rarr;</button>
+    <p class="lightbox-caption" data-lightbox-caption></p>
+</div>
+
+<!-- =========================================================
+     SCRIPTS
+========================================================== -->
+<script>
+    // ============================================================
+    // HERO video toggle
+    // ============================================================
+    document.addEventListener('DOMContentLoaded', function() {
+        document.documentElement.classList.add('js');
+
+        var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var revealItems = document.querySelectorAll('.reveal, .section-heading, .stat, .value-card, .process-layout, .map-wrap, .journal-grid');
+        revealItems.forEach(function(item) { item.classList.add('reveal'); });
+
+        if (reducedMotion || !('IntersectionObserver' in window)) {
+            revealItems.forEach(function(item) { item.classList.add('is-visible'); });
+        } else {
+            var revealObserver = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+            revealItems.forEach(function(item) { revealObserver.observe(item); });
+        }
+
+        var parallaxImage = document.querySelector('.brand-hero-visual img');
+        var parallaxLayers = document.querySelectorAll('.parallax-media');
+        if (!reducedMotion && (parallaxImage || parallaxLayers.length)) {
+            var parallaxFrame = false;
+            var updateParallax = function() {
+                var viewportHeight = window.innerHeight;
+                if (parallaxImage) {
+                    var heroRect = parallaxImage.closest('.brand-hero').getBoundingClientRect();
+                    if (heroRect.bottom > 0 && heroRect.top < viewportHeight) {
+                        var heroProgress = (viewportHeight - heroRect.top) / (viewportHeight + heroRect.height);
+                        var heroShift = (heroProgress - 0.5) * 34;
+                        parallaxImage.style.transform = 'translate3d(0,' + heroShift.toFixed(1) + 'px,0) scale(1.04)';
+                    }
+                }
+                parallaxLayers.forEach(function(layer) {
+                    var bounds = layer.parentElement.getBoundingClientRect();
+                    if (bounds.bottom < 0 || bounds.top > viewportHeight) { return; }
+                    var progress = (viewportHeight - bounds.top) / (viewportHeight + bounds.height);
+                    layer.style.transform = 'translate3d(0,' + ((progress - 0.5) * 100).toFixed(1) + 'px,0)';
+                });
+                parallaxFrame = false;
+            };
+            window.addEventListener('scroll', function() {
+                if (!parallaxFrame) {
+                    parallaxFrame = true;
+                    window.requestAnimationFrame(updateParallax);
+                }
+            }, { passive: true });
+            updateParallax();
+        }
+
+        var heroFilm = document.getElementById('heroFilm');
+        var heroToggle = document.querySelector('[data-play-toggle="heroFilm"]');
+
+        if (heroFilm && heroToggle) {
+            heroFilm.muted = true;
+            heroFilm.playsInline = true;
+            var heroPlayback = heroFilm.play();
+            if (heroPlayback !== undefined) {
+                heroPlayback.then(function() {
+                    heroFilm.classList.add('active');
+                    heroToggle.textContent = 'Pause film';
+                    heroToggle.setAttribute('aria-label', 'Pause background film');
+                }).catch(function() {
+                    heroToggle.textContent = 'Play film';
+                    heroToggle.setAttribute('aria-label', 'Play background film');
+                });
+            }
+            heroToggle.addEventListener('click', function() {
+                if (heroFilm.paused) {
+                    heroFilm.play().then(function() {
+                        heroFilm.classList.add('active');
+                        heroToggle.textContent = 'Pause film';
+                        heroToggle.setAttribute('aria-label', 'Pause background film');
+                    }).catch(function() {
+                        heroToggle.textContent = 'Film unavailable';
+                    });
+                } else {
+                    heroFilm.pause();
+                    heroFilm.classList.remove('active');
+                    heroToggle.textContent = 'Play film';
+                    heroToggle.setAttribute('aria-label', 'Play background film');
+                }
+            });
+        }
+
+        // ========================================================
+        // Brand film toggle
+        // ========================================================
+        var brandFilm = document.getElementById('brandFilm');
+        var brandToggle = document.querySelector('[data-play-toggle="brandFilm"]');
+        if (brandFilm && brandToggle) {
+            // Autoplay muted for background video
+            brandFilm.muted = true;
+            brandFilm.playsInline = true;
+            var bp = brandFilm.play();
+            if (bp !== undefined) {
+                bp.then(function() {
+                    brandToggle.classList.remove('is-paused');
+                    brandToggle.setAttribute('aria-label', 'Pause background film');
+                    brandToggle.setAttribute('title', 'Pause background film');
+                }).catch(function() {
+                    brandToggle.classList.add('is-paused');
+                    brandToggle.setAttribute('aria-label', 'Play background film');
+                    brandToggle.setAttribute('title', 'Play background film');
+                });
+            }
+            brandToggle.addEventListener('click', function() {
+                if (brandFilm.paused) {
+                    brandFilm.play().then(function() {
+                        brandToggle.classList.remove('is-paused');
+                        brandToggle.setAttribute('aria-label', 'Pause background film');
+                        brandToggle.setAttribute('title', 'Pause background film');
+                    }).catch(function(){});
+                } else {
+                    brandFilm.pause();
+                    brandToggle.classList.add('is-paused');
+                    brandToggle.setAttribute('aria-label', 'Play background film');
+                    brandToggle.setAttribute('title', 'Play background film');
+                }
+            });
+        }
+
+        // ========================================================
+        // Video modal (play-chip)
+        // ========================================================
+        var modal = document.getElementById('videoModal');
+        var modalVideo = modal ? modal.querySelector('video') : null;
+        var modalCaption = modal ? modal.querySelector('[data-modal-caption]') : null;
+
+        document.querySelectorAll('[data-video]').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                var src = this.getAttribute('data-video');
+                var caption = this.getAttribute('data-caption') || '';
+                if (modalVideo && src) {
+                    modalVideo.src = src;
+                    if (modalCaption) modalCaption.textContent = caption;
+                    modal.classList.add('open');
+                    modalVideo.play().catch(function(){});
+                }
+            });
+        });
+
+        var closeModalBtn = document.querySelector('[data-modal-close]');
+        if (closeModalBtn && modal) {
+            closeModalBtn.addEventListener('click', function() {
+                modal.classList.remove('open');
+                if (modalVideo) { modalVideo.pause(); modalVideo.src = ''; }
+            });
+        }
+        if (modal) {
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.classList.remove('open');
+                    if (modalVideo) { modalVideo.pause(); modalVideo.src = ''; }
+                }
+            });
+        }
+
+        // ========================================================
+        // Lightbox
+        // ========================================================
+        var lightbox = document.getElementById('lightbox');
+        if (lightbox) {
+            var lbImg = lightbox.querySelector('img');
+            var lbCaption = lightbox.querySelector('[data-lightbox-caption]');
+            var prevBtn = lightbox.querySelector('.lightbox-prev');
+            var nextBtn = lightbox.querySelector('.lightbox-next');
+            var closeLb = lightbox.querySelector('.lightbox-close');
+            var items = [];
+            var idx = 0;
+
+            function updateLb() {
+                if (!items.length) return;
+                var item = items[idx];
+                var src = item.getAttribute('data-lightbox-full') || (item.querySelector('img') ? item.querySelector('img').src : '');
+                var cap = item.getAttribute('data-lightbox-caption') || '';
+                if (lbImg) { lbImg.src = src; lbImg.alt = cap; }
+                if (lbCaption) lbCaption.textContent = cap;
+            }
+
+            var journalItems = document.querySelectorAll('[data-lightbox]');
+            journalItems.forEach(function(item, i) {
+                items.push(item);
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    idx = i;
+                    updateLb();
+                    lightbox.classList.add('open');
+                });
+            });
+
+            if (closeLb) closeLb.addEventListener('click', function() { lightbox.classList.remove('open'); });
+            if (prevBtn) prevBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                if (items.length) { idx = (idx - 1 + items.length) % items.length; updateLb(); }
+            });
+            if (nextBtn) nextBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                if (items.length) { idx = (idx + 1) % items.length; updateLb(); }
+            });
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) lightbox.classList.remove('open');
+            });
+        }
+
+        // ========================================================
+        // Year + mobile menu
+        // ========================================================
+        document.querySelectorAll('[data-year]').forEach(function(el) { el.textContent = new Date().getFullYear(); });
+
+        var menuBtn = document.getElementById('menuButton');
+        var mobileMenu = document.getElementById('mobileMenu');
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', function() {
+                var expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+                menuBtn.setAttribute('aria-expanded', String(!expanded));
+                mobileMenu.classList.toggle('open');
+            });
+        }
+
+        // ========================================================
+        // Process tabs
+        // ========================================================
+        var processSection = document.querySelector('[data-process]');
+        if (processSection) {
+            var pButtons = processSection.querySelectorAll('.process-button');
+            var pImage = processSection.querySelector('[data-process-image] img');
+            var pLabel = processSection.querySelector('[data-step-label]');
+            var pTitle = processSection.querySelector('[data-step-title]');
+            var pBody = processSection.querySelector('[data-step-body]');
+
+            pButtons.forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    pButtons.forEach(function(b) { b.classList.remove('active'); });
+                    this.classList.add('active');
+                    if (pImage && this.getAttribute('data-image')) {
+                        pImage.src = this.getAttribute('data-image');
+                        pImage.alt = this.getAttribute('data-image-alt') || '';
+                    }
+                    if (pLabel) pLabel.textContent = this.getAttribute('data-label') || '';
+                    if (pTitle) pTitle.textContent = this.getAttribute('data-title') || '';
+                    if (pBody) pBody.textContent = this.getAttribute('data-body') || '';
+                });
+            });
+        }
+
+        // ========================================================
+        // Carousel controls
+        // ========================================================
+        var carousel = document.querySelector('[data-carousel]');
+        if (carousel) {
+            var track = carousel.querySelector('[data-carousel-track]');
+            var prev = carousel.querySelector('[data-carousel-prev]');
+            var next = carousel.querySelector('[data-carousel-next]');
+            if (track && prev && next) {
+                var step = 340;
+                prev.addEventListener('click', function() { track.scrollBy({ left: -step, behavior: 'smooth' }); });
+                next.addEventListener('click', function() { track.scrollBy({ left: step, behavior: 'smooth' }); });
+            }
+        }
+
+        document.querySelectorAll("[data-enquiry-form]").forEach(function(form) {
+            form.addEventListener("submit", function(event) {
+                event.preventDefault();
+                if (!form.reportValidity()) { return; }
+
+                var labels = {
+                    company: "Company",
+                    contact: "Name",
+                    email: "Email",
+                    phone: "Phone / WhatsApp",
+                    flower: "Flower / variety",
+                    quantity: "Quantity / stems",
+                    destination: "Destination country",
+                    shipment_date: "Required delivery window",
+                    requirements: "Requirements"
+                };
+                var details = [];
+                new FormData(form).forEach(function(value, name) {
+                    if (value.trim()) { details.push((labels[name] || name) + ": " + value.trim()); }
+                });
+
+                var text = "Hello Elwana Blooms, I would like to enquire about flowers.\n\n" + details.join("\n");
+                window.location.href = "https://wa.me/254722671336?text=" + encodeURIComponent(text);
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

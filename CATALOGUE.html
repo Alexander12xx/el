@@ -1,0 +1,1341 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore the floral collection of Elwana Blooms Company Limited, Runda, Nairobi, Kenya.">
+<title>Elwana Blooms | Floral Catalogue</title>
+
+<style>
+:root {
+  --green: #073f30;
+  --dark-green: #052b21;
+  --gold: #bd9b55;
+  --cream: #fbf8f1;
+  --text: #263b32;
+  --muted: #6b7770;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: #e8e7e1;
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 14px 6%;
+  background: var(--dark-green);
+  color: white;
+}
+
+.toolbar strong {
+  letter-spacing: 2px;
+}
+
+.toolbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.toolbar-logo {
+  width: 72px;
+  height: 52px;
+  background: white;
+  object-fit: cover;
+  object-position: center 49%;
+}
+
+.toolbar button {
+  padding: 12px 20px;
+  border: 1px solid var(--gold);
+  background: var(--gold);
+  color: var(--dark-green);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.toolbar button:hover { opacity: .88; }
+
+.catalogue {
+  max-width: 900px;
+  margin: 28px auto;
+}
+
+.page {
+  position: relative;
+  min-height: 1120px;
+  padding: 60px;
+  margin-bottom: 28px;
+  background: var(--cream);
+  box-shadow: 0 8px 30px #00000012;
+  overflow: hidden;
+  break-after: page;
+  page-break-after: always;
+}
+
+.page:last-child {
+  break-after: auto;
+  page-break-after: auto;
+}
+
+.brand {
+  color: var(--green);
+  font-family: Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.brand-mark {
+  color: var(--green);
+  font-family: Georgia, serif;
+  font-size: 65px;
+  line-height: 1;
+  letter-spacing: -5px;
+}
+
+.brand-mark span { color: var(--gold); }
+
+.eyebrow {
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+h1, h2, h3 {
+  color: var(--green);
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+h1 { font-size: 62px; }
+h2 { font-size: 39px; margin: 12px 0; }
+h3 { font-size: 21px; margin: 10px 0 5px; }
+
+p { margin: 0 0 16px; }
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* COVER PAGE */
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  color: white;
+  background: var(--dark-green);
+  min-height: 1120px;
+}
+
+.cover-image {
+  position: absolute;
+  inset: 0 0 235px;
+  background:
+    linear-gradient(180deg, #001c1280, #001c1200 40%, #001c1260),
+    url("hero.png")
+    center/cover;
+}
+
+.brand-logo {
+  display: block;
+  width: 200px;
+  height: 126px;
+  background: white;
+  object-fit: cover;
+  object-position: center 49%;
+}
+
+.cover-content {
+  position: relative;
+  z-index: 1;
+  padding: 60px;
+}
+
+.cover .brand-mark,
+.cover .brand { color: white; }
+
+.cover h1 {
+  color: white;
+  margin-top: 220px;
+  margin-bottom: 15px;
+  font-size: 65px;
+}
+
+.cover .eyebrow { color: #e6cf99; }
+
+.cover-bottom {
+  position: relative;
+  z-index: 2;
+  padding: 32px 60px 45px;
+  border-top: 3px solid var(--gold);
+  background: var(--dark-green);
+}
+
+/* INTRODUCTION */
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.intro-photo {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.feature {
+  padding: 13px 0;
+  border-top: 1px solid var(--gold);
+}
+
+.feature strong {
+  display: block;
+  color: var(--green);
+  font-family: Georgia, serif;
+  font-size: 17px;
+}
+
+.feature small { color: var(--muted); }
+
+.quote {
+  margin-top: 35px;
+  color: var(--green);
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-style: italic;
+}
+
+/* FLOWER COLLECTIONS */
+
+.section-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5ddcf;
+}
+
+.section-number {
+  padding: 12px 18px;
+  background: var(--green);
+  color: white;
+  font-family: Georgia, serif;
+  font-size: 21px;
+}
+
+.flower-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px 18px;
+}
+
+.flower-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5ddcf;
+}
+
+.flower-card img {
+  width: 100%;
+  height: 205px;
+  object-fit: cover;
+  background: #e9e4da;
+}
+
+.flower-card h3 {
+  margin: 10px 0 2px;
+  font-size: 19px;
+}
+
+.botanical-name {
+  margin-bottom: 7px;
+  color: #92743a;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.flower-card p {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.flower-tag {
+  display: block;
+  margin-top: auto;
+  color: #92743a;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.photo-credit {
+  display: block;
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+.photo-credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #bd9b5580;
+  text-underline-offset: 2px;
+}
+
+.note {
+  margin-top: 30px;
+  padding: 18px;
+  border-left: 3px solid var(--gold);
+  background: #f1ede4;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.footer {
+  position: absolute;
+  right: 60px;
+  bottom: 25px;
+  left: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding-top: 12px;
+  border-top: 1px solid #e5ddcf;
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+/* ORDER ENQUIRIES */
+
+.order-box {
+  margin-top: 30px;
+  padding: 25px;
+  background: var(--green);
+  color: white;
+}
+
+.order-box h3 { color: #e7d19c; }
+
+.order-box p {
+  margin-bottom: 0;
+  color: #e5eee8;
+}
+
+/* CONTACT PAGE */
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  background: var(--dark-green);
+}
+
+.contact-page h2,
+.contact-page h3,
+.contact-page .brand,
+.contact-page .brand-mark {
+  color: white;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.contact-photo {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+}
+
+.contact-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #ffffff35;
+}
+
+.contact-item span {
+  display: block;
+  margin-bottom: 5px;
+  color: #dfc486;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.contact-item p,
+.contact-item a {
+  margin: 0;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.contact-item a:hover { text-decoration: underline; }
+
+.contact-page .footer {
+  position: static;
+  margin-top: 35px;
+  border-color: #ffffff35;
+  color: #cbd7cf;
+}
+
+.contact-page .eyebrow { color: #dfc486; }
+
+.developer-credit {
+  width: fit-content;
+  max-width: 100%;
+  margin: 22px 0 0 auto;
+  padding: 10px 0 0 22px;
+  border-top: 1px solid #bd9b5580;
+  color: #cbd7cf;
+  font-size: 9px;
+  letter-spacing: 1.2px;
+  line-height: 1.6;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.developer-credit strong {
+  display: block;
+  color: #e3ce9d;
+  font-size: 10px;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+}
+
+a { overflow-wrap: anywhere; }
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 650px) {
+  .toolbar {
+    position: relative;
+    align-items: stretch;
+    flex-direction: column;
+    padding: 18px;
+  }
+
+  .toolbar button { width: 100%; }
+
+  .catalogue { margin: 0 auto; }
+
+  .page {
+    min-height: auto;
+    padding: 30px 24px 55px;
+    margin-bottom: 12px;
+  }
+
+  .cover {
+    min-height: 780px;
+    padding: 0;
+  }
+
+  .cover-content { padding: 30px 24px; }
+  .cover h1 { margin-top: 180px; font-size: 48px; }
+  .cover-bottom { padding: 25px 24px 35px; }
+
+  h2 { font-size: 32px; }
+
+  .intro-grid,
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-photo { height: 300px; }
+
+  .flower-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .flower-card img { height: 160px; }
+  .flower-card h3 { font-size: 17px; }
+  .photo-credit { font-size: 8px; }
+
+  .section-head { align-items: center; }
+  .section-number { padding: 9px 12px; }
+
+  .contact-photo { height: 300px; }
+
+  .footer {
+    position: static;
+    margin-top: 35px;
+  }
+}
+
+/* PRINT / SAVE AS PDF */
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  body {
+    background: white;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .toolbar { display: none !important; }
+
+  .catalogue {
+    max-width: none;
+    margin: 0;
+  }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    min-height: 297mm;
+    margin: 0;
+    padding: 15mm 16mm;
+    box-shadow: none;
+    overflow: hidden;
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .page:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+
+  .cover { padding: 0; }
+  .cover-content { padding: 16mm; }
+  .cover h1 { margin-top: 48mm; font-size: 44pt; }
+  .cover-bottom { padding: 9mm 16mm 12mm; }
+  .cover-image { inset: 0 0 62mm; }
+
+  .intro-photo { height: 95mm; }
+  .intro-grid { margin-top: 6mm; }
+  .intro-grid > div > p {
+    margin-bottom: 3mm;
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+  .features {
+    gap: 2mm 3mm;
+    margin-top: 4mm;
+  }
+  .feature { padding: 2mm 0; }
+  .feature strong { font-size: 10.5pt; }
+  .feature small { font-size: 7.5pt; }
+  .quote {
+    margin-top: 5mm;
+    font-size: 18pt;
+  }
+  .intro-grid,
+  .contact-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .flower-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 5mm 5mm;
+  }
+  .flower-card img { height: 39mm; }
+  .flower-card h3 { font-size: 12.5pt; }
+  .flower-card p { font-size: 8.5pt; }
+  .botanical-name { font-size: 8.5pt; }
+  .photo-credit { font-size: 6.5pt; }
+  .section-head { margin-bottom: 7mm; }
+  .note { margin-top: 6mm; }
+
+  .footer {
+    position: absolute;
+    right: 16mm;
+    bottom: 8mm;
+    left: 16mm;
+  }
+
+  .contact-photo { height: 115mm; }
+  .contact-layout { margin-top: 12mm; }
+
+  .contact-page { padding-bottom: 25mm; }
+
+  .contact-page .footer {
+    position: absolute;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="toolbar">
+  <div class="toolbar-brand">
+    <img class="toolbar-logo" src="elwana%20logo.png" alt="Elwana Blooms logo">
+    <div>
+      <strong>ELWANA BLOOMS</strong>
+      <span> &nbsp; Floral Catalogue</span>
+    </div>
+  </div>
+  <button onclick="downloadPDF()">
+    Download / Save as PDF
+  </button>
+</div>
+
+<main class="catalogue">
+
+  <!-- PAGE 1: COVER -->
+
+  <section class="page cover">
+    <div class="cover-image"></div>
+
+    <div class="cover-content">
+      <img class="brand-logo" src="elwana%20logo.png" alt="Elwana Blooms — Kenyan grown, global markets">
+
+      <div class="eyebrow" style="margin-top:10px">
+        Kenyan Grown · Global Markets
+      </div>
+
+      <h1>Floral<br>Catalogue</h1>
+
+      <p>
+        Beautiful blooms for life's most meaningful moments.
+      </p>
+    </div>
+
+    <div class="cover-bottom">
+      <div class="eyebrow">
+        Elwana Blooms Company Limited
+      </div>
+      <p style="margin-top:10px">
+        Freshness, colour and natural elegance in every stem.
+      </p>
+    </div>
+  </section>
+
+  <!-- PAGE 2: ABOUT US -->
+
+  <section class="page">
+    <div class="eyebrow">Welcome to Elwana Blooms</div>
+
+    <h2>Nature's beauty,<br>carefully brought to you.</h2>
+
+    <div class="intro-grid">
+      <div>
+        <p>
+          At <strong>Elwana Blooms Company Limited</strong>,
+          flowers are more than a product. They are a way to
+          express love, celebrate milestones and make everyday
+          moments memorable.
+        </p>
+
+        <p>
+          This collection brings together familiar bouquet flowers,
+          distinctive statement blooms and useful finishing stems.
+          Each entry includes its botanical name, a flower-specific
+          photograph and a source credit. It is a broad selection of
+          flowers grown in Kenya, not an exhaustive list; varieties
+          and availability differ by grower and season.
+        </p>
+
+        <p>
+          Our flowers are grown in Kenya and prepared for customers
+          in local and international markets. The selection changes
+          with season and availability, so please confirm details
+          with our team before placing an order.
+        </p>
+
+        <div class="features">
+          <div class="feature">
+            <strong>Flower Reference</strong>
+            <small>Common and botanical names.</small>
+          </div>
+
+          <div class="feature">
+            <strong>Arrangement Ideas</strong>
+            <small>Flowers for bouquets and events.</small>
+          </div>
+
+          <div class="feature">
+            <strong>Seasonal Availability</strong>
+            <small>Confirm varieties before ordering.</small>
+          </div>
+
+          <div class="feature">
+            <strong>Order Support</strong>
+            <small>Ask about colours and stem options.</small>
+          </div>
+        </div>
+      </div>
+
+      <img
+        class="intro-photo"
+        src="assets/catalogue/protea.jpg"
+        alt="King protea flower"
+      >
+    </div>
+
+    <div class="quote">
+      Thoughtfully grown in Kenya. Beautifully brought to the world.
+    </div>
+
+    <div class="footer">
+      <span>ELWANA BLOOMS · ABOUT US</span>
+      <span>01</span>
+    </div>
+  </section>
+
+  <!-- PAGE 3: CLASSICS AND BOUQUET FLOWERS -->
+
+  <section class="page">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">01 · The Classics</div>
+        <h2>Flowers for Bouquets</h2>
+        <p>Recognisable favourites with distinctive shapes and colour.</p>
+      </div>
+      <div class="section-number">01</div>
+    </div>
+
+    <div class="flower-grid">
+      <article class="flower-card">
+        <img src="hero.png" alt="Red cut-flower roses" loading="eager">
+        <h3>Cut-flower Rose</h3>
+        <p class="botanical-name">Rosa × hybrida</p>
+        <p>A versatile focal bloom for gifting, celebrations and everyday arrangements.</p>
+        <span class="flower-tag">Classic · Focal flower</span>
+        <small class="photo-credit">Photo: Elwana Blooms</small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/alstroemeria.jpg" alt="Orange Alstroemeria flowers with marked petals" loading="eager">
+        <h3>Alstroemeria</h3>
+        <p class="botanical-name">Alstroemeria aurantiaca</p>
+        <p>Patterned petals and branching stems bring colour and movement to mixed bouquets.</p>
+        <span class="flower-tag">Patterned · Long-lasting</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Alstroemeria_aurantiaca.jpg" target="_blank" rel="noopener">Photo: JJ Harrison · CC BY-SA 3.0</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/gerbera.jpg" alt="Orange Gerbera daisy" loading="eager">
+        <h3>Gerbera</h3>
+        <p class="botanical-name">Gerbera × hybrida</p>
+        <p>Open, daisy-like flower heads make a bright, graphic focal point.</p>
+        <span class="flower-tag">Bright · Focal flower</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:01_Gerbera_orange.jpg" target="_blank" rel="noopener">Photo: Mister rf · CC BY-SA 4.0</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/carnation.jpg" alt="Red carnation flower" loading="eager">
+        <h3>Carnation</h3>
+        <p class="botanical-name">Dianthus caryophyllus</p>
+        <p>Ruffled petals and a broad colour range suit both bouquets and event work.</p>
+        <span class="flower-tag">Ruffled · Versatile</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:W_carnation4051.jpg" target="_blank" rel="noopener">Photo: 草花写真館 · CC BY-SA 3.0</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/chrysanthemum.jpg" alt="Chrysanthemum flower with layered petals" loading="eager">
+        <h3>Chrysanthemum</h3>
+        <p class="botanical-name">Chrysanthemum × morifolium</p>
+        <p>Full, layered blooms add shape and volume to seasonal designs.</p>
+        <span class="flower-tag">Full · Textural</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Chrysanthemum_Flower_2.jpg" target="_blank" rel="noopener">Photo: Aliva Sahoo · CC BY-SA 4.0</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/lily.jpg" alt="Pink Turk's-cap lily in bloom" loading="eager">
+        <h3>Turk's-cap Lily</h3>
+        <p class="botanical-name">Lilium martagon</p>
+        <p>Distinctive recurved petals give this lily an elegant, architectural profile.</p>
+        <span class="flower-tag">Sculptural · Refined</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Lilium_martagon_Tauerntal_01.jpg" target="_blank" rel="noopener">Photo: Uoaei1 · CC BY-SA 4.0</a></small>
+      </article>
+    </div>
+
+    <div class="note">
+      Flower colours, grades, stem lengths and pack formats vary by season.
+      Confirm current selection and pricing with our team before ordering.
+    </div>
+
+    <div class="footer">
+      <span>ELWANA BLOOMS · BOUQUET FLOWERS</span>
+      <span>02</span>
+    </div>
+  </section>
+
+  <!-- PAGE 4: STATEMENT FLOWERS -->
+
+  <section class="page">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">02 · Statement Blooms</div>
+        <h2>Form & Colour</h2>
+        <p>Standout flowers for considered designs and special occasions.</p>
+      </div>
+      <div class="section-number">02</div>
+    </div>
+
+    <div class="flower-grid">
+      <article class="flower-card">
+        <img src="assets/catalogue/hydrangea.jpg" alt="Pink bigleaf hydrangea flower cluster" loading="eager">
+        <h3>Bigleaf Hydrangea</h3>
+        <p class="botanical-name">Hydrangea macrophylla</p>
+        <p>Rounded flower heads create a soft, generous shape in arrangements.</p>
+        <span class="flower-tag">Lush · Romantic</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Bigleaf_Hydrangea_Hydrangea_macrophylla_%27Tokyo_Delight%27_Pink_3008px.jpg" target="_blank" rel="noopener">Photo: Derek Ramsey · GFDL 1.2</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/orchid.jpg" alt="Pale Phalaenopsis orchid flowers" loading="eager">
+        <h3>Moon Orchid</h3>
+        <p class="botanical-name">Phalaenopsis amabilis</p>
+        <p>Graceful arching stems and delicate blooms suit refined floral displays.</p>
+        <span class="flower-tag">Elegant · Distinctive</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Phalaenopsis_amabilis_Orchi_198.jpg" target="_blank" rel="noopener">Photo: Orchi · CC BY-SA 3.0</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/protea.jpg" alt="King protea flower in bloom" loading="eager">
+        <h3>King Protea</h3>
+        <p class="botanical-name">Protea cynaroides</p>
+        <p>A dramatic, sculptural flower that brings a bold natural focal point.</p>
+        <span class="flower-tag">Sculptural · Statement</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Protea_cynaroides_-_Wilhelma.jpg" target="_blank" rel="noopener">Photo: H. Zell · CC BY-SA 3.0</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/lisianthus.jpg" alt="Lisianthus flowers in bloom" loading="eager">
+        <h3>Lisianthus</h3>
+        <p class="botanical-name">Eustoma grandiflorum</p>
+        <p>Soft, rose-like petals bring a graceful finish to bouquets and event work.</p>
+        <span class="flower-tag">Soft · Romantic</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Lisianthus_2025.jpg" target="_blank" rel="noopener">Photo: Wasir kasab · CC BY 4.0</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/ranunculus.jpg" alt="Yellow Ranunculus eschscholtzii flower" loading="eager">
+        <h3>Ranunculus</h3>
+        <p class="botanical-name">Ranunculus eschscholtzii</p>
+        <p>Layered petals create a delicate, full flower with a soft garden feel.</p>
+        <span class="flower-tag">Layered · Garden style</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Ranunculus_eschscholtzii.jpg" target="_blank" rel="noopener">Photo: Jason Hollinger · CC BY 2.0</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/tulip.jpg" alt="Tulip flowers in bloom" loading="eager">
+        <h3>Tulip</h3>
+        <p class="botanical-name">Tulipa gesneriana</p>
+        <p>Clean lines and smooth petals offer a modern, understated silhouette.</p>
+        <span class="flower-tag">Modern · Seasonal</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99%D7%9D.JPG" target="_blank" rel="noopener">Photo: Dina L · CC0</a></small>
+      </article>
+    </div>
+
+    <div class="note">
+      These photographs identify the flower shown; they do not indicate
+      current stock. Please ask about varieties and colours in season.
+    </div>
+
+    <div class="footer">
+      <span>ELWANA BLOOMS · STATEMENT FLOWERS</span>
+      <span>03</span>
+    </div>
+  </section>
+
+  <!-- PAGE 5: KENYA-GROWN CUT FLOWERS -->
+
+  <section class="page">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">04 · Kenya-Grown Cut Flowers</div>
+        <h2>Market flowers &amp; fillers</h2>
+        <p>A selection of cut flowers and greenery grown by Kenyan farms for local and export markets.</p>
+      </div>
+      <div class="section-number">03</div>
+    </div>
+
+    <div class="flower-grid">
+      <article class="flower-card">
+        <img src="assets/catalogue/sunflower.jpg" alt="Sunflower with golden petals" loading="eager">
+        <h3>Sunflower</h3>
+        <p class="botanical-name">Helianthus annuus</p>
+        <p>A bold, sunny flower that brings an informal, cheerful note.</p>
+        <span class="flower-tag">Bright · Seasonal</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Sunflower_sky_backdrop.jpg" target="_blank" rel="noopener">Photo: Fir0002 · GFDL 1.2</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/statice.jpg" alt="Papery statice flowers, pictured dried" loading="eager">
+        <h3>Statice</h3>
+        <p class="botanical-name">Limonium sinuatum</p>
+        <p>Fine clusters of papery flowers add light texture; this reference image is dried.</p>
+        <span class="flower-tag">Textural · Filler</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:50-picture_focus_stack_of_dried_statice_flowers_(Limonium)_(PPL2-Enhanced)_julesvernex2.jpg" target="_blank" rel="noopener">Photo: Jules Verne Times Two · CC BY-SA 4.0</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/gypsophila.jpg" alt="Airy white Gypsophila flower clusters" loading="eager">
+        <h3>Baby's Breath</h3>
+        <p class="botanical-name">Gypsophila paniculata</p>
+        <p>Cloud-like branching sprays soften bouquets and add delicate detail.</p>
+        <span class="flower-tag">Airy · Filler</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Gypsophila_paniculata.jpg" target="_blank" rel="noopener">Photo: PiPi · Public domain</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/hypericum.jpg" alt="Red Hypericum berries on leafy stems" loading="eager">
+        <h3>Hypericum Berries</h3>
+        <p class="botanical-name">Hypericum</p>
+        <p>Glossy berries and foliage give mixed arrangements colour and natural texture.</p>
+        <span class="flower-tag">Textural · Accent</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Hypericum_berries_-_red_-_March_3_2021.jpeg" target="_blank" rel="noopener">Photo: Nesnad · CC BY 4.0</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/eucalyptus.jpg" alt="Rounded silver-dollar Eucalyptus leaves" loading="eager">
+        <h3>Silver Dollar Eucalyptus</h3>
+        <p class="botanical-name">Eucalyptus cinerea</p>
+        <p>Rounded, silvery leaves provide a clean foliage accent and gentle movement.</p>
+        <span class="flower-tag">Foliage · Fragrant</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Eucalyptus_cinerea_leaves.jpg" target="_blank" rel="noopener">Photo: Geoff Derrin · CC BY-SA 4.0</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/delphinium.jpg" alt="Blue delphinium flower spikes" loading="eager">
+        <h3>Delphinium</h3>
+        <p class="botanical-name">Delphinium elatum</p>
+        <p>Elegant vertical spires create height and drama in premium arrangements.</p>
+        <span class="flower-tag">Tall · Premium</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Delphinium_elatum_-_panoramio.jpg" target="_blank" rel="noopener">Photo: Björn S. · CC BY-SA 3.0</a></small>
+      </article>
+    </div>
+
+    <div class="footer">
+      <span>ELWANA BLOOMS · KENYA-GROWN FLOWERS</span>
+      <span>04</span>
+    </div>
+  </section>
+
+  <!-- PAGE 6: SEASONAL LINE FLOWERS -->
+
+  <section class="page">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">05 · Seasonal Line Flowers</div>
+        <h2>Height &amp; Movement</h2>
+        <p>Upright stems and airy sprays for structure, colour and texture.</p>
+      </div>
+      <div class="section-number">05</div>
+    </div>
+
+    <div class="flower-grid">
+
+      <article class="flower-card">
+        <img src="assets/catalogue/snapdragon.jpg" alt="Snapdragon flowers in mixed colours" loading="eager">
+        <h3>Snapdragon</h3>
+        <p class="botanical-name">Antirrhinum majus</p>
+        <p>Spired blooms add texture, movement and strong vertical colour to floral work.</p>
+        <span class="flower-tag">Vertical · Seasonal</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Antirrhinum_majus_BCBG_%2802%29.jpg" target="_blank" rel="noopener">Photo: Craig Franklin · CC BY-SA 3.0 au</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/freesia.jpg" alt="Yellow and white freesia bouquet" loading="eager">
+        <h3>Freesia</h3>
+        <p class="botanical-name">Freesia</p>
+        <p>Sweetly fragrant blooms with a fresh, clean look for bouquets and gifting.</p>
+        <span class="flower-tag">Fragrant · Fresh</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Freesia.jpg" target="_blank" rel="noopener">Photo: Jeantosti · CC BY-SA 3.0</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/gladiolus.jpg" alt="Pink gladiolus flowers" loading="eager">
+        <h3>Gladiolus</h3>
+        <p class="botanical-name">Gladiolus</p>
+        <p>Strong stems and open blooms create a dramatic line in larger arrangements.</p>
+        <span class="flower-tag">Tall · Dramatic</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:0_Gladiolus_italicus_-_Samo%C3%ABns_%281%29.JPG" target="_blank" rel="noopener">Photo: Jean-Pol GRANDMONT · CC BY-SA 3.0</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/solidago.jpg" alt="Yellow Solidago filler sprays" loading="eager">
+        <h3>Solidago</h3>
+        <p class="botanical-name">Solidago canadensis</p>
+        <p>Dense sprays of tiny yellow blooms add cheerful colour and texture.</p>
+        <span class="flower-tag">Spray · Cheerful</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Solidago_canadensis_20050815_248.jpg" target="_blank" rel="noopener">Photo: Georg Slickers · CC BY-SA 4.0</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/eryngium.jpg" alt="Blue thistle-like eryngium flowers" loading="eager">
+        <h3>Eryngium</h3>
+        <p class="botanical-name">Eryngium planum</p>
+        <p>Textural, spiky blooms bring a sculptural note to wedding and event designs.</p>
+        <span class="flower-tag">Textural · Sculptural</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Eryngium_planum_bgiu.jpg" target="_blank" rel="noopener">Photo: Bogdan assumed · CC BY-SA 3.0</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/trachelium.jpg" alt="Blue-purple trachelium flower clusters" loading="eager">
+        <h3>Trachelium</h3>
+        <p class="botanical-name">Trachelium caeruleum</p>
+        <p>Dense clusters of starry flowers give a soft cloud effect in arrangements.</p>
+        <span class="flower-tag">Cloud-like · Soft</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:IMG_0029-Trachelium_caeruleum.jpg" target="_blank" rel="noopener">Photo: C T Johansson · CC BY 3.0</a></small>
+      </article>
+    </div>
+
+    <div class="footer">
+      <span>ELWANA BLOOMS · SEASONAL LINE FLOWERS</span>
+      <span>05</span>
+    </div>
+  </section>
+
+  <!-- PAGE 7: FILLERS, FOLIAGE AND STOCK -->
+
+  <section class="page">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">06 · Finishing Stems</div>
+        <h2>Fillers &amp; Foliage</h2>
+        <p>Supporting stems and greens that bring balance to mixed arrangements.</p>
+      </div>
+      <div class="section-number">06</div>
+    </div>
+
+    <div class="flower-grid">
+
+      <article class="flower-card">
+        <img src="assets/catalogue/veronica.jpg" alt="Tall purple Veronica flower spikes" loading="eager">
+        <h3>Veronica</h3>
+        <p class="botanical-name">Veronica longifolia</p>
+        <p>A clean, upright filler flower that suits fresh and event-focused designs.</p>
+        <span class="flower-tag">Upright · Filler</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Veronica_longifolia_Przetacznik_d%C5%82ugolistny_2020-07-12_05.jpg" target="_blank" rel="noopener">Photo: Agnieszka Kwiecień, Nova · CC BY-SA 4.0</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/ammi.jpg" alt="White ammi flower clusters" loading="eager">
+        <h3>Ammi</h3>
+        <p class="botanical-name">Ammi majus</p>
+        <p>Soft, airy flower umbels add lightness and volume to mixed-market bunches.</p>
+        <span class="flower-tag">Airy · Fill</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Ammi_majus_Sturm8.jpg" target="_blank" rel="noopener">Photo: Johann Georg Sturm · Public domain</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/bupleurum.jpg" alt="Green bupleurum flower stems" loading="eager">
+        <h3>Bupleurum</h3>
+        <p class="botanical-name">Bupleurum rotundifolium</p>
+        <p>Small rounded clusters create fresh texture and a natural garden feel.</p>
+        <span class="flower-tag">Natural · Textural</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Bupleurum_rotundifolium_sl6.jpg" target="_blank" rel="noopener">Photo: Stefan.lefnaer · CC BY-SA 3.0</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/calla-lily.jpg" alt="White calla lily blooms" loading="eager">
+        <h3>Calla Lily</h3>
+        <p class="botanical-name">Zantedeschia aethiopica</p>
+        <p>Elegant funnel-shaped blooms give classic floral work a premium finish.</p>
+        <span class="flower-tag">Classic · Premium</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Zantedeschia_aethiopica_-1.jpg" target="_blank" rel="noopener">Photo: Eric Hunt · CC BY-SA 2.5</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/leatherleaf-fern.jpg" alt="Bright green leatherleaf fern" loading="eager">
+        <h3>Leatherleaf Fern</h3>
+        <p class="botanical-name">Rumohra adiantiformis</p>
+        <p>Robust green foliage for framing designs and adding fill to export orders.</p>
+        <span class="flower-tag">Foliage · Durable</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Starr_070906-8744_Rumohra_adiantiformis.jpg" target="_blank" rel="noopener">Photo: Forest &amp; Kim Starr · CC BY 3.0</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/stock.jpg" alt="Purple stock flowers with narrow leaves" loading="eager">
+        <h3>Stock</h3>
+        <p class="botanical-name">Matthiola incana</p>
+        <p>Fragrant clusters on upright stems bring soft colour and a classic garden feel.</p>
+        <span class="flower-tag">Fragrant · Line flower</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Matthiola_incana._Madeira,_Portugal.jpg" target="_blank" rel="noopener">Photo: Ввласенко · CC BY-SA 3.0</a></small>
+      </article>
+    </div>
+
+    <div class="footer">
+      <span>ELWANA BLOOMS · FILLERS &amp; FOLIAGE</span>
+      <span>06</span>
+    </div>
+  </section>
+
+  <!-- PAGE 8: SPECIALTY FLOWERS -->
+
+  <section class="page">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">07 · Seasonal Flower Varieties</div>
+        <h2>More Flowers to Explore</h2>
+        <p>Additional seasonal blooms to ask about when planning an order.</p>
+      </div>
+      <div class="section-number">07</div>
+    </div>
+
+    <div class="flower-grid">
+      <article class="flower-card">
+        <img src="assets/catalogue/scabiosa.jpg" alt="Lavender Scabiosa flower head" loading="eager">
+        <h3>Scabiosa</h3>
+        <p class="botanical-name">Scabiosa atropurpurea</p>
+        <p>Pin-cushion flower heads add a delicate, natural focal detail to bouquets.</p>
+        <span class="flower-tag">Textural · Seasonal</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Scabiosa_atropurpurea,_flower,_S%C3%A8te_01.jpg" target="_blank" rel="noopener">Photo: Christian Ferrer · CC BY-SA 4.0</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/china-aster.jpg" alt="Magenta China aster in bloom" loading="eager">
+        <h3>China Aster</h3>
+        <p class="botanical-name">Callistephus chinensis</p>
+        <p>Full daisy-like blooms provide a colourful focal flower for mixed bunches.</p>
+        <span class="flower-tag">Full · Seasonal</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Callistephus_chinensis_2023-08-28_9180.jpg" target="_blank" rel="noopener">Photo: Salicyna · CC BY-SA 4.0</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/sweet-william.jpg" alt="Magenta Sweet William flower" loading="eager">
+        <h3>Sweet William</h3>
+        <p class="botanical-name">Dianthus barbatus</p>
+        <p>Compact clusters of fringed blooms add colour and a fine, ruffled texture.</p>
+        <span class="flower-tag">Clustered · Textural</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Dianthus_barbatus_153938.jpg" target="_blank" rel="noopener">Photo: Sabina Bajracharya · CC BY-SA 4.0</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/celosia.jpg" alt="Pink Celosia flower plume" loading="eager">
+        <h3>Celosia</h3>
+        <p class="botanical-name">Celosia argentea</p>
+        <p>Distinctive, velvety plumes bring bold colour and sculptural texture.</p>
+        <span class="flower-tag">Sculptural · Colourful</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Celosia_argentea_flower_mongolia.jpg" target="_blank" rel="noopener">Photo: Ts. Yesui · CC0</a></small>
+      </article>
+    </div>
+
+    <div class="footer">
+      <span>ELWANA BLOOMS · SEASONAL FLOWER VARIETIES</span>
+      <span>07</span>
+    </div>
+  </section>
+
+  <!-- PAGE 9: SPECIALTY BLOOMS -->
+
+  <section class="page">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">08 · Specialty Blooms</div>
+        <h2>Protea &amp; Seasonal Accents</h2>
+        <p>Distinctive focal stems and fine-textured blooms for special designs.</p>
+      </div>
+      <div class="section-number">08</div>
+    </div>
+
+    <div class="flower-grid">
+
+      <article class="flower-card">
+        <img src="assets/catalogue/pincushion-protea.jpg" alt="Pink and yellow pincushion protea flower" loading="eager">
+        <h3>Pincushion Protea</h3>
+        <p class="botanical-name">Leucospermum cordifolium</p>
+        <p>A distinctive rounded protea with fine, radiating styles and bold colour.</p>
+        <span class="flower-tag">Statement · Textural</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Leucospermum_cordifolium_flower.JPG" target="_blank" rel="noopener">Photo: Andrew Massyn · Public domain</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/waxflower.jpg" alt="Pale pink waxflower blossoms on a leafy stem" loading="eager">
+        <h3>Waxflower</h3>
+        <p class="botanical-name">Chamelaucium uncinatum</p>
+        <p>Small waxy blooms and fine foliage create a light, long-lasting filler stem.</p>
+        <span class="flower-tag">Filler · Delicate</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Starr_080313-3381_Chamelaucium_uncinatum.jpg" target="_blank" rel="noopener">Photo: Forest &amp; Kim Starr · CC BY 3.0</a></small>
+      </article>
+
+      <article class="flower-card">
+        <img src="assets/catalogue/zinnia.jpg" alt="Coral Zinnia flower with layered petals" loading="eager">
+        <h3>Zinnia</h3>
+        <p class="botanical-name">Zinnia elegans</p>
+        <p>Layered, vivid blooms make a cheerful accent for seasonal arrangements.</p>
+        <span class="flower-tag">Colourful · Seasonal</span>
+        <small class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Zinnienbl%C3%BCte_Zinnia_elegans_stack15_20190722-RM-7222254.jpg" target="_blank" rel="noopener">Photo: Ermell · CC BY-SA 4.0</a></small>
+      </article>
+    </div>
+
+    <div class="note">
+      This is a representative catalogue, not a complete register of every
+      flower grown in Kenya. Product range, grades and colours vary by farm
+      and season; please confirm current availability before ordering.
+    </div>
+
+    <div class="order-box">
+      <h3>Planning an order?</h3>
+      <p>
+        Share your preferred flowers, colours, stem lengths, quantities,
+        pack format and delivery date. Our team can confirm current
+        availability and provide a quote.
+      </p>
+    </div>
+
+    <div class="footer">
+      <span>ELWANA BLOOMS · SEASONAL &amp; SPECIALTY FLOWERS</span>
+      <span>08</span>
+    </div>
+  </section>
+
+  <!-- PAGE 10: CONTACT -->
+
+  <section class="page contact-page">
+
+    <div>
+      <img class="brand-logo" src="elwana%20logo.png" alt="Elwana Blooms — Kenyan grown, global markets">
+
+      <div class="eyebrow" style="margin-top:10px">
+        Kenyan Grown · Global Markets
+      </div>
+
+      <div class="contact-layout">
+
+        <div>
+          <div class="eyebrow">Get in touch</div>
+
+          <h2 style="font-size:45px;margin-top:15px">
+            Let's talk<br>flowers.
+          </h2>
+
+          <p style="color:#dce7df;margin:20px 0">
+            We would love to hear from you. Contact us for
+            flower enquiries, availability and ordering details.
+          </p>
+
+          <div class="contact-item">
+            <span>Email Address</span>
+            <a href="mailto:elwanablooms@gmail.com">
+              elwanablooms@gmail.com
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <span>Telephone</span>
+            <a href="tel:+254722671336">
+              +254 722 671 336
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <span>Our Location</span>
+            <p>Ciata Mall, Runda<br>Nairobi, Kenya</p>
+          </div>
+
+          <div class="contact-item">
+            <span>Company</span>
+            <p>Elwana Blooms Company Limited</p>
+          </div>
+        </div>
+
+        <img
+          class="contact-photo"
+          src="hero.png"
+          alt="Red roses from the Elwana Blooms collection"
+          loading="eager"
+        >
+
+      </div>
+    </div>
+
+    <div style="padding-top:30px;border-top:1px solid #ffffff35;margin-top:35px">
+      <p style="font-family:Georgia,serif;font-style:italic;font-size:24px;color:#e3ce9d">
+        Fresh flowers. Meaningful moments.
+      </p>
+
+      <p style="font-size:12px;color:#cbd7cf">
+        Thank you for exploring our catalogue.
+        Contact Elwana Blooms to discuss your floral needs.
+      </p>
+
+      <div class="developer-credit">
+        Digital catalogue developed by
+        <strong>Altech Software and Digital Solutions Ltd.</strong>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span>ELWANA BLOOMS COMPANY LIMITED</span>
+      <span>09</span>
+    </div>
+
+  </section>
+
+</main>
+
+<script>
+async function downloadPDF() {
+  await waitForImages();
+  window.print();
+}
+
+// Wait for the images to load before opening the print dialog.
+// This helps reduce missing photographs in the saved PDF.
+async function waitForImages() {
+  const images = Array.from(document.images);
+
+  await Promise.all(images.map(img => {
+    if (img.complete) return Promise.resolve();
+
+    return new Promise(resolve => {
+      img.addEventListener("load", resolve, { once: true });
+      img.addEventListener("error", resolve, { once: true });
+
+      // Avoid waiting indefinitely for an unavailable image.
+      setTimeout(resolve, 8000);
+    });
+  }));
+}
+
+window.addEventListener("beforeprint", () => {
+  document.title = "Elwana Blooms - Floral Catalogue";
+});
+</script>
+
+</body>
+</html>
